@@ -19,6 +19,14 @@ let db = {
             likecount: 5,
             commentCount: 2
         }
+    ],
+    comments: [
+        {
+            userHandle: 'user',
+            screamId: 'qlekwjrsadzxcv',
+            body: 'nice one mate!',
+            createAt: '2020-04-03T20:30:02.573Z'
+        }
     ]
 }
 
