@@ -135,7 +135,7 @@ exports.getUserDetails = (req, res) => {
       data.forEach((doc) => {
         userData.screams.push({
           body: doc.data().body,
-          createAt: doc.data().createAt,
+          createdAt: doc.data().createdAt,
           userHandle: doc.data().userHandle,
           userImage: doc.data().userImage,
           likeCount: doc.data().likeCount,
@@ -173,7 +173,7 @@ exports.getAuthenticatedUser = (req, res) => {
       return db
         .collection("notifications")
         .where("recipient", "==", req.user.handle)
-        .orderBy("createAt", "desc")
+        .orderBy("createdAt", "desc")
         .limit(10)
         .get();
     })

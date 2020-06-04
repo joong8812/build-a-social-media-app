@@ -4,7 +4,7 @@ let db = {
         userId: 'wekjrlj3owelv1',
         email: 'user@gmail.com',
         handle: 'user',
-        createAt: '2020-04-03T13:39:42.573Z',
+        createdAt: '2020-04-03T13:39:42.573Z',
         imageUrl: 'image/asdkfjwqerqw/alsdjfoiq',
         bio: 'Hello, my name is user, nice to meet you',
         website: 'https://user.com',
@@ -15,7 +15,7 @@ let db = {
         {
             userHandle: 'user',
             body: 'this is the scream body',
-            createAt: '2020-03-31T20:30:02.573Z',
+            createdAt: '2020-03-31T20:30:02.573Z',
             likecount: 5,
             commentCount: 2
         }
@@ -25,7 +25,7 @@ let db = {
             userHandle: 'user',
             screamId: 'qlekwjrsadzxcv',
             body: 'nice one mate!',
-            createAt: '2020-04-03T20:30:02.573Z'
+            createdAt: '2020-04-03T20:30:02.573Z'
         }
     ],
     notification: [
@@ -35,7 +35,7 @@ let db = {
             read: 'true | false',
             screamId: 'qlekwjrsadzxcv',
             type: 'like | comment',
-            createAt: '2020-04-03T20:30:02.573Z'
+            createdAt: '2020-04-03T20:30:02.573Z'
         }
     ]
 }
@@ -46,7 +46,7 @@ const userDetails = {
         userId: 'QWELKRJ1234FJ321FJ',
         email: 'user@gmail.com',
         handle: 'user',
-        createAt: '2020-04-03T13:39:42.573Z',
+        createdAt: '2020-04-03T13:39:42.573Z',
         imageUrl: 'image/asdkfjwqerqw/alsdjfoiq',
         bio: 'Hello, my name is user, nice to meet you',
         website: 'https://user.com',

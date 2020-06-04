@@ -65,7 +65,7 @@ exports.getScream = (req, res) => {
       screamData.screamId = doc.id;
       return db
         .collection("comments")
-        .orderBy("createAt", "desc")
+        .orderBy("createdAt", "desc")
         .where("screamId", "==", req.params.screamId)
         .get();
     })
@@ -89,7 +89,7 @@ exports.commentOnScream = (req, res) => {
 
   const newComment = {
     body: req.body.body,
-    createAt: new Date().toISOString(),
+    createdAt: new Date().toISOString(),
     screamId: req.params.screamId,
     userHandle: req.user.handle,
     userImage: req.user.imageUrl,
